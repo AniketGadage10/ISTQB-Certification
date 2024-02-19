@@ -1,0 +1,20 @@
+https://www.guru99.com/software-testing.html
+Video series
+=============================================
+https://www.guru99.com/istqb.html
+3 tests are available with techniques
+=============================================
+500 mcqs
+Questions
+https://www.istqb.guru/Documents/500-ISTQB-Sample-Papers_Questions_istqb.guru.pdf
+Answer Codes
+https://www.istqb.guru/Documents/500-ISTQB-Sample-Papers_Answers_istqb.guru.pdf
+===============================================
+https://istqb.patshala.com/tests/https://istqb.patshala.com/tests/
+
+api endpoint for various tests
+===========================================
+
+'why code has been written for
+option explicit
+'declared first
