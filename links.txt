@@ -4,3 +4,97 @@ https://outlook.office.com/mail/safelink.html?url=https://urldefense.com/v3/__ht
 
 
 https://docs.google.com/presentation/d/154gZB62v-fGVH9Qm27-YtIwqCOFKs5RR/edit#slide=id.p1
+-----------------------------------------------------------------------------------------------------------------------------------
+
+						Chapter 4
+
+1) Equivalence Partitioning:
+	-Equivalence class Partitioning: u can't test with all value so test with every variety of data
+	-verity of data finds from requirements
+	- ECP base on input behaviour
+	- Equivalence class Partitioning
+	- test with varity of data
+	-CLASS IS CREATED WITH ONE VALID CLASS AND REMAINING ARE INVALID CLASSES
+	-one value per class-for class1 we can take any value between 1 to 17 are equivalance so we can take any one value for test
+		EXCEPT IF ONE CLASS HAS DIFFERENT OUTCOME SO ONE CLASS OR ERROR WE CAN TAKE 2 DIFF VALUE FOR THAT
+		EX PASSWORD PATTERN 	
+			ERROR CLASS 
+				SPCIAL CHARCTER =ABC@
+				NUMBER =ABC12
+
+	A) ECP BASED ON I/P BEHAVIOUR
+			
+	EX- OFFER TO AGE BETWEEN 18 TO 55
+	class 1: - 1 to 17 age  error to young/invalid class
+	class 2 :-18 to 55age   valid class
+	class 3 :- 56 and above  error to old/invalid class
+
+	- coverage= no of class tested / no class identifed
+	
+	B) ECP BASED ON O/P BEHAVIOUR AS PRIME CALCULATION
+
+	-PRIMIUM NEED TO APPLY BASE ON AGE
+	class 1: - 1 to 17 age  error to young/invalid class
+	class 2: 18 TO 30 = 2000 O/P BEHAVIOUR 
+	class 3: 31 TO 45 = 2500 O/P BEHAVIOUR 
+	class 4: 46 TO 55 = 3000 O/P BEHAVIOUR 
+	class 5 :- 56 and above  error to old/invalid class
+	5 CLASSES NEED TO CREATE
+	
+	C) ECP BASED ON TIME BEHAVIOUR
+
+	OTP VALIDATION
+
+	OTP =1234
+	VALID BEFORE 2 MIN =1234
+	INVALID =1243
+	INVALID AFTER 2 MIN =1234
+
+	D) ECP BASED ON USER BEHAVIOUR
+	ALL DATA IS VALID
+	A) PAITENT USER
+	B) INPAITENT USER
+	CLICK,RESFERSH,GO BACK,CLOSE DURING THE TRANSCATION ACTION PERFORM
+
+	E) ECP BASED ON CONFIGURATION
+	-ALL VALID DATA AND PAITENT USER ARE THEIR
+	-EXTERNAL FACTOR AFFECTING 
+		EX NETWORK PROBLEM DURING PAYMENT
+	
+	-ECP NOT ABOUT COMBINATION -----> ECP IS TESTING EACH CLASS ONCE
+	-IT WILL GIVE MINIMUM NO OF TEST CASES
+	-it is not only for user data entry/interface but also use for external data comming from another side/application
+
+
+	example:-
+		
+		A) ECP BASED ON I/P BEHAVIOUR   B) ECP BASED ON O/P BEHAVIOUR             C) ECP BASED ON USER BEHAVIOUR
+			empty                       ALL SAME -->ALL ARE MAX                   CANCEL
+			out of range                TWO SAME AND MAX--->
+			non-numbers                  A IS MAX/B IS MAX/C IS MAX            D) BVA
+			with in range                                                         ON BOUNDRY JUST INSIDE  JUST OUTSIDE
+
+                                                                                                 100       99           101
+                                                                                                -100       -99          -101
+----------------------------------------------------------------------------------------------------------------------------------
+
+2) Boundary Value Analysis:
+
+	-checking boundry conditions
+			18 to 55 is valid but what about 18 and 55 if age is 18 or 55
+			18 and 55 are boundry value if we should accept 18 or 55 value
+			17 to 56 are just outside boundry value
+
+	a)2 BVA-(TWO Boundary Value Analysis)		
+		on boundry    just outside boundry         
+			18	    17
+			55	    56
+	BEHAVIOUR same as class   different than class
+
+	a)3 BVA-(THREE Boundary Value Analysis)		
+		on boundry    just outside boundry    just INSIDE boundry          
+			18	    17				19
+			55	    56				54
+	BEHAVIOUR same as class   different than class     same as class
+
+	-BOUNDRY ARE CHANGE AS PER LIST COUNT OF CLASS
