@@ -1,0 +1,16 @@
+Test Monitoring and Control:
+ Test Monitoring:- 
+	-COMAPRING WHAT WE PLAN WHAT  AND  CHECKING AS WE GOING AS PER PLAN
+	-CHCEKING QUALITY OF PEODUCT BY COVERAGE,DEFECT DATA
+	-CHEACKING QAULITY OF TESTER ,NO DEFECT ARE FOUNDED BY TEAM,ARE THEY VALID DEFECT,
+	-test report changes based on AUDIENCE
+	-TEST SUMMARY REPORT IS CREATED AS PER STD
+
+ Test Control:-
+
+------------------------------------------------------------------------------------------------------------------
+
+
+ Configuration Management:-VERSION MANAGEMENT TOOLS
+	purpose of configuration management is to establish and maintain the integrity of the component or 
+system, the testware,
